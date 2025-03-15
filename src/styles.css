@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 350px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botones */
+  .button {
+    display: block;
+    background: #0033cc;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background: #002bb8;
+  }
+  
+  /* Barra de búsqueda */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 15px 0;
+  }
+  
+  .icon {
+    color: gray;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  /* Lista de elementos */
+  .items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .lab-item {
+    display: flex;
+    align-items: center;
+    background: #0033cc;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .lab-item:hover {
+    background: #002bb8;
+  }
+  
+  .item-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .item-text {
+    flex-grow: 1;
+  }
+  
