@@ -1,0 +1,15 @@
+{
+    "fuente-poder": {
+      "title": "Fuente de poder",
+      "description": "Proporciona voltaje y corriente controlados...",
+      "model": "/models/modelo.glb",
+      "video": "https://www.youtube.com/watch?v=XXXXXX"
+    },
+    "pendulo": {
+      "title": "Fuente de poder",
+      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "model": "/models/modelo.glb",
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+    }
+  }
+  

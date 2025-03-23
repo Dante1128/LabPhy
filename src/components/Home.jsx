@@ -7,7 +7,7 @@ export default function Home() {
     <div className="container">
       <h1>Bienvenido a LabPhy</h1>
       <p>Explora los elementos de laboratorio.</p>
-      <Link to="/categories" className="button">
+      <Link to="/lab-items" className="button">
         Ir a Categorías
       </Link>
     </div>

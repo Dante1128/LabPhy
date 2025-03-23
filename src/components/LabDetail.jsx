@@ -1,40 +1,28 @@
 import { useParams } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Suspense } from "react"; 
+import { Suspense, useState } from "react";
+import labDetails from "../data/labDetails.json";
+import styles from "./LabDetail.module.css";
 
-const labDetails = {
-  "fuente-poder": {
-    title: "Fuente de poder",
-    description: "Proporciona voltaje y corriente controlados...",
-    model: "/models/modelo.glb",
-    video: "https://www.youtube.com/watch?v=XXXXXX",
-  },
+const ModelViewer = ({ modelPath, setIsLoading }) => {
+  const { scene } = useGLTF(modelPath, true);
+
+  // Ocultar "Cargando" cuando el modelo se ha cargado
+  useState(() => {
+    setIsLoading(false);
+  }, []);
+
+  return <primitive object={scene} scale={0.9} position={[0, -1, 0]} rotation={[0, -Math.PI / 2, 0]} />;
 };
 
-const ModelViewer = ({ modelPath }) => {
-    const { scene } = useGLTF(modelPath);
-    
-    return (
-      <primitive 
-        object={scene} 
-        scale={0.9}      // Ajusta la escala
-        position={[0, -1, 0]}  // Baja el modelo para centrarlo
-        rotation={[0, -Math.PI / 2, 0]}
-        // Rota el modelo 180° si es necesario
-      />
-    );
-  };
-
 const LabDetail = () => {
-    console.log("🚀 LabDetail se está renderizando");
-    
-    const { itemId } = useParams();
-    console.log("🔹 itemId recibido:", itemId);
-  
-    const item = labDetails[itemId];
-    console.log("🔸 item encontrado en labDetails:", item);
-  
+  const { itemId } = useParams();
+  const itemIdLower = itemId.toLowerCase();
+  const item = labDetails[itemIdLower];
+
+  const [isLoading, setIsLoading] = useState(true);
+
   if (!item) {
     return <h2>Elemento no encontrado</h2>;
   }
@@ -42,22 +30,26 @@ const LabDetail = () => {
   return (
     <div>
       <h2>{item.title}</h2>
-     
 
-      {/* Visor 3D */}
-      <Canvas style={{ height: "300px" }}>
-        <ambientLight intensity={0.5} />  {/* Luz ambiental */}
-        <directionalLight position={[5, 5, 5]} intensity={1} />  {/* Luz direccional */}
-            <ModelViewer modelPath={item.model} />
-            <OrbitControls />
-       
+      <div style={{ position: "relative" }}>
+        {isLoading && <p className={styles.loader}>Cargando el componente...</p>}
+
+        <Canvas style={{ height: "300px" }}>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[5, 5, 5]} intensity={1} />
+
+          <Suspense fallback={<p className={styles.loader}>Cargando modelo 3D...</p>}>
+            <ModelViewer modelPath={item.model} setIsLoading={setIsLoading} />
+          </Suspense>
+
+          <OrbitControls />
         </Canvas>
+      </div>
 
+      <p className={styles["centered-text"]}>{item.description}</p>
 
-      {/* Video tutorial */}
-      <p>{item.description}</p>
       <a href={item.video} target="_blank" rel="noopener noreferrer">
-        <img src="/public/image/image.png" alt="" /> Ver Video en YouTube
+        <img src="/image/image.png" alt="Ver video" /> Ver Video en YouTube
       </a>
     </div>
   );
