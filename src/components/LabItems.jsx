@@ -42,6 +42,7 @@ const LabItems = () => {
           <p>No se encontraron resultados.</p>
         )}
       </div>
+     
     </div>
   );
 };

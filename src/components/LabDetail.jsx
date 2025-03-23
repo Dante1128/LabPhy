@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Suspense, useState, useEffect } from "react";
@@ -17,6 +17,8 @@ const ModelViewer = ({ modelPath, setIsLoading }) => {
 
 const LabDetail = () => {
   const { itemId } = useParams();
+  const navigate = useNavigate(); // Hook para la navegación
+
   if (!itemId) return <h2>Elemento no encontrado</h2>;
 
   const itemIdLower = itemId.toLowerCase();
@@ -29,6 +31,10 @@ const LabDetail = () => {
 
   return (
     <div>
+      <button className={styles.backButton} onClick={() => navigate(-1)}>
+        ← Volver atrás
+      </button>
+
       <h2>{item.title}</h2>
 
       <div style={{ position: "relative", height: "300px" }}>
