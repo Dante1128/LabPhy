@@ -7,33 +7,33 @@
     },
     "fuente-de-energia": {
       "title": "Fuente de poder",
-      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "description": "Dispositivo que convierte la energía eléctrica de una fuente (como un tomacorriente) en el voltaje y corriente adecuados para alimentar aparatos electrónicos. Es esencial para el funcionamiento seguro y estable de muchos equipos.",
       "model": "/models/Fuente+de+Energia.glb",
-      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+      "video": "https://www.youtube.com/watch?v=wNG_OIgNs18w"
     },
     "pendulo": {
       "title": "Péndulo",
-      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "description": " Objeto suspendido de un punto fijo que oscila libremente bajo la acción de la gravedad. Se usa en relojes, experimentos físicos y mediciones de tiempo.",
       "model": "/models/pendulo.glb",
-      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+      "video": "https://www.youtube.com/watch?v=hpudURuEk-M"
     },
     "sensor-ultrasonico": {
       "title": "Sensor Ultrasonico",
-      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "description": "Dispositivo que mide distancias emitiendo ondas de sonido de alta frecuencia y calculando el tiempo que tardan en reflejarse en un objeto. Es usado en robótica, vehículos y sistemas de medición.",
       "model": "/models/sensor_ultrasonico.glb",
       "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
     },
     "vernier": {
       "title": "Vernier",
-      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "description": "Instrumento de medición precisa que permite determinar longitudes, diámetros o profundidades con gran exactitud. Se usa en mecánica, ingeniería y laboratorios.",
       "model": "/models/vernier.glb",
-      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+      "video": "https://www.youtube.com/watch?v=Ynf6wUqp7QI"
     },
     "vernier-digital": {
       "title": "Vernier Digital",
-      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "description": "Instrumento de medición que muestra resultados precisos en una pantalla digital. Facilita la lectura de longitudes, diámetros y profundidades con mayor rapidez y exactitud que el vernier convencional.",
       "model": "/models/vernier_digital.glb",
-      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+      "video": "https://www.youtube.com/watch?v=MmptDtBlwvI"
     }
   }
   
