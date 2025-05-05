@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const labItems = [
-  { name: "Fuente de poder", route: "fuente-poder", image: "/assets/images/fuente_poder.jpg" },
+  { name: "Balanza Digital", route: "balanza-digital", image: "/assets/images/fuente_poder.jpg" },
+  { name: "Fuente de poder ", route: "fuente-de-energia", image: "/assets/images/pendulo.jpg" },
   { name: "Péndulo", route: "pendulo", image: "/assets/images/pendulo.jpg" },
-  { name: "Balanza Analítica", route: "balanza-analitica", image: "/assets/images/balanza.jpg" },
-  { name: "Tubo de Venturi", route: "tubo-venturi", image: "/assets/images/tubo_venturi.jpg" },
+  { name: "Sensor Ultrasonico", route: "sensor-ultrasonico", image: "/assets/images/balanza.jpg" },
+  { name: "Vernier", route: "vernier", image: "/assets/images/tubo_venturi.jpg" },
+  { name: "Vernier Digital", route: "vernier-digital", image: "/assets/images/tubo_venturi.jpg" },
   
   
 ];

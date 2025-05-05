@@ -1,14 +1,38 @@
 {
-    "fuente-poder": {
-      "title": "Fuente de poder",
-      "description": "Proporciona voltaje y corriente controlados...",
-      "model": "/models/modelo.glb",
+    "balanza-digital": {
+      "title": "Balanza Digital",
+      "description": "Es un instrumento electrónico que permite medir el peso de objetos de forma precisa y rápida. Utiliza sensores que convierten la presión en datos digitales, los cuales se muestran en una pantalla. Es común en comercios, laboratorios e industrias.",
+      "model": "/models/balanza_digital.glb",
       "video": "https://www.youtube.com/watch?v=XXXXXX"
     },
-    "pendulo": {
+    "fuente-de-energia": {
       "title": "Fuente de poder",
       "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
-      "model": "/models/modelo.glb",
+      "model": "/models/Fuente+de+Energia.glb",
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+    },
+    "pendulo": {
+      "title": "Péndulo",
+      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "model": "/models/pendulo.glb",
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+    },
+    "sensor-ultrasonico": {
+      "title": "Sensor Ultrasonico",
+      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "model": "/models/sensor_ultrasonico.glb",
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+    },
+    "vernier": {
+      "title": "Vernier",
+      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "model": "/models/vernier.glb",
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+    },
+    "vernier-digital": {
+      "title": "Vernier Digital",
+      "description": " aaaaaaaa Proporciona voltaje y corriente controlados...",
+      "model": "/models/vernier_digital.glb",
       "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
     }
   }

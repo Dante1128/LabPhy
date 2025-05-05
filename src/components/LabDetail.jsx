@@ -12,7 +12,7 @@ const ModelViewer = ({ modelPath, setIsLoading }) => {
     if (scene) setIsLoading(false); // Marcar como cargado cuando la escena esté disponible
   }, [scene, setIsLoading]);
 
-  return <primitive object={scene} scale={0.9} position={[0, -1, 0]} rotation={[0, -Math.PI / 2, 0]} />;
+  return <primitive object={scene} scale={10} position={[-1, 0, 0]} rotation={[0, -Math.PI / 2, 0]} />;
 };
 
 const LabDetail = () => {
