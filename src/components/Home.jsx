@@ -18,7 +18,7 @@ export default function Home() {
           optimizar tus practicas y mejorar tu 
           comprension de la fisica.
         </p>
-        <Link to="/lab-items" className="button">
+        <Link to="/lab-items" className="button" >
           Ir a Categorías
         </Link>
       </div>
