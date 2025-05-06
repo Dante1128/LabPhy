@@ -31,6 +31,7 @@ const LabDetail = () => {
 
   return (
     <div>
+      <h1 className="uwu">uwu</h1>
       <button className={styles.backButton} onClick={() => navigate(-1)}>
         ← Volver atrás
       </button>
