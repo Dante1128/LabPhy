@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 const labItems = [
   { name: "Balanza Digital", route: "balanza-digital", image: "/image/balanza-digital.png" },
   { name: "Fuente de poder ", route: "fuente-de-energia", image: "/assets/images/pendulo.jpg" },
