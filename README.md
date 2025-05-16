@@ -44,6 +44,7 @@ npm run dev
 # CUIDADO ⚠️
 Al hacer un Pull Request, asegúrate de que la rama destino sea develop para mantener la integridad del flujo de trabajo.
 
-![Ejemplo](ruta/a/tu/imagen.png)
+![Ejemplo](./README/ejemplo.png)
+
 
 
