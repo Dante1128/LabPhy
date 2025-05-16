@@ -1,0 +1,23 @@
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px; /* opcional para limitar ancho */
+    margin: auto; /* centrar horizontalmente */
+  }
+  
+  .category-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #0056b3;
+  }
+  
