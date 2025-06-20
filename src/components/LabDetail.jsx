@@ -5,6 +5,7 @@ import { Suspense, useState, useEffect } from "react";
 import labDetails from "../data/labDetails.json";
 import styles from "./LabDetail.module.css";
 
+
 const ModelViewer = ({ modelPath, setIsLoading }) => {
   const { scene } = useGLTF(modelPath);
 
@@ -26,17 +27,21 @@ const LabDetail = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   if (!item) {
-    return <h2>Elemento no encontrado</h2>;
+    return <h2 className="parrafo">Elemento no encontrado</h2>;
   }
 
   return (
-    <div>
-      <h1 className="uwu">uwu</h1>
-      <button className={styles.backButton} onClick={() => navigate(-1)}>
-        ← Volver atrás
-      </button>
+    <div className="contenido">
+      <div className="partearriba">
+        <button className={styles.backButton} onClick={() => navigate(-1)}>
+        <i class="material-icons icon" title="Izquierda">arrow_back</i>
+        </button>
+        
+        <div className="image"><img src="/image/logo.png" alt="" /></div>
+      </div>
+     
 
-      <h2>{item.title}</h2>
+      <h2 className="titulo">{item.title}</h2>
 
       <div style={{ position: "relative", height: "300px" }}>
         {/* Mensaje de carga */}
