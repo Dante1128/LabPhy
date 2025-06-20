@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import "./Labitems.css";
 
 const labItems = [
   { name: "Balanza Digital", route: "balanza-digital", category: "categoria-1", image: "/image/balanza-digital.png" },
@@ -21,29 +22,40 @@ const LabItems = () => {
   );
 
   return (
-    <div>
-      <h2>Elementos de laboratorio - {category}</h2>
-      <input
-        type="text"
-        placeholder="Buscar..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className="search-input"
-      />
-      <div className="lab-container">
+    <div className="contenidoitem">
+      <div className="partearriba">
+        <div className="volver"><a href="" className="flecha"><i class="material-icons icon" title="Izquierda">arrow_back</i></a></div>
+        <div className="image"><img src="/image/logo.png" alt="" /></div>
+      </div>
+      
+      <div className="barrabuscador">
+        <input
+          type="text"
+          placeholder="Buscar..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="buscador"
+        />
+      </div>
+      <div className="titulo">
+
+      
+        <h2 className="letras">Elementos de laboratorio - {category}</h2>
+      </div>
+      <div className="labcontainer">
         {filteredItems.length > 0 ? (
           filteredItems.map((item, index) => (
-            <Link to={`/lab/${item.route}`} key={index} className="lab-item">
+            <Link to={`/lab/${item.route}`} key={index} className="labitem">
 
 
-              <div className="lab-card">
-                <img src={item.image} alt={item.name} className="lab-image" />
-                <button>{item.name} ➝</button>
+              <div className="labcard">
+                <img src={item.image} alt={item.name} className="labimage" />
+                <button className="botone">{item.name} ➝</button>
               </div>
             </Link>
           ))
         ) : (
-          <p>No se encontraron resultados.</p>
+          <p className="parrafo">No se encontraron resultados.</p>
         )}
       </div>
     </div>

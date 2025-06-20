@@ -16,18 +16,25 @@ const Categorias = () => {
   };
 
   return (
-    <div>
-      <h2>Categorías</h2>
-      <div className="categories-container">
-        {categorias.map((cat) => (
-          <button
-            key={cat.route}
-            onClick={() => handleCategoryClick(cat.route)}
-            className="category-button"
-          >
-            {cat.name}
-          </button>
-        ))}
+    <div className="contenedorcategorias">
+      <div className="partearriba">
+        <div className="volver"><a href="/Home.jsx" className="flecha"><i class="material-icons icon" title="Izquierda">arrow_back</i></a></div>
+        <div className="image"><img src="/image/logo.png" alt="" /></div>
+      </div>
+
+      <div className="parteabajo">
+        <h2 className="titulo">CATEGORIAS</h2>
+        <div className="categories-container">
+          {categorias.map((cat) => (
+            <button
+              key={cat.route}
+              onClick={() => handleCategoryClick(cat.route)}
+              className="category-button"
+            >
+              {cat.name}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
