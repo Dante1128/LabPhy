@@ -1,105 +1,342 @@
-
-.contenidoitem
-{
-    padding: 25px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* Contenedor principal */
+.contenidoitem {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f8f9fa;
 }
-.partearriba
-{
+
+/* Header con navegación */
+.partearriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+}
+
+.flecha {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.spacer {
+  width: 40px; /* Mismo ancho que el botón para centrar el logo */
+}
+
+/* Barra de búsqueda */
+.barrabuscador {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.buscador {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: rgb(0, 123, 255);;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buscador:focus {
+  border-color: rgb(0, 123, 255);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.buscador::placeholder {
+  color: #999;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.letras {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: #333;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Contenedor de tarjetas */
+.labcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjetas de laboratorio */
+.labitem {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.labitem:hover {
+  transform: translateY(-5px);
+}
+
+.labcard {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labcard:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.labimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardcontent {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  flex-grow: 1;
+}
+
+.cardtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardarrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Botón original como fallback */
+.botone {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 12%;
 }
-.volver
-{
-  display: flex;
-  border: 1px solid black;
-  height: 50%;
-  width: 15%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.volver:hover
-{
-  background-color: #8fc2f8;
-}
-.image
-{
-  margin: 0px 10px;
-}
-.flecha
-{
-  color: black;
-}
-.titulo
-{
-  font-family: "Ubuntu Condensed", sans-serif;
-  margin: 10px 15px;
-  font-size: 23px;
-  font-weight: 500;
-}
-.letras
-{
-    font-family: "Ubuntu Condensed", sans-serif;
-    font-size: 20px;
-    color: black;
-    margin: 15px 0px;
-}
-.buscador
-{
-    background-color: #ffffff;
-    width: 90%;
-    height: 116%;
-    margin: 5px 10px;
-    border-radius: 5px;
-    color: #000000;
-}
-.parrafo
-{
-    font-family: "Ubuntu Condensed", sans-serif;
-    font-size: 15px;
-    color: black;
-    margin: 15px 0px;
-}
-.labcontainer
-{
-    border: 1px solid rgb(66, 66, 66);
-    border-radius: 10px; 
-    height: 87%;
-}
-.labitem
-{
 
-    width: 50%;
+.botone:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
 }
-.labcard
-{
-    
-    display: flex;
-    align-items: center;
-    margin: 20px 10px 15px 12px;
-    
+
+/* Sin resultados */
+.noresults {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
 }
-.botone
-{
-    width: 60%;
-    height: 20%;
-    font-size: 16px;
-    border-radius: 10px;
-    margin: 20px 0px 20px 15px;
-    background-color: #0D3669;
+
+.parrafo {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
 }
-.botone:hover
-{
-    background-color: #8fc2f8;
+
+/* Tablets (768px y menos) */
+@media (max-width: 768px) {
+  .contenidoitem {
+    padding: 0.5rem;
+  }
+  
+  .partearriba {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image img {
+    height: 2rem;
+  }
+  
+  .labcontainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .labimage {
+    height: 160px;
+  }
+  
+  .cardcontent {
+    padding: 1rem;
+  }
+  
+  .cardtitle {
+    font-size: 1rem;
+  }
 }
-.labimage
-{
-    width: 30%;
-    height: 20%;
+
+/* Móviles (480px y menos) */
+@media (max-width: 480px) {
+  .contenidoitem {
+    padding: 0.5rem;
+  }
+  
+  .partearriba {
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .flecha {
+    padding: 0.3rem;
+    font-size: 1.3rem;
+  }
+  
+  .image img {
+    height: 1.8rem;
+  }
+  
+  .buscador {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .letras {
+    font-size: 1.5rem;
+  }
+  
+  .labcontainer {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .labimage {
+    height: 140px;
+  }
+  
+  .cardcontent {
+    padding: 0.8rem 1rem;
+  }
+  
+  .cardtitle {
+    font-size: 0.9rem;
+  }
+  
+  .cardarrow {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles muy pequeños (360px y menos) */
+@media (max-width: 360px) {
+  .partearriba {
+    padding: 0.5rem;
+  }
+  
+  .buscador {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .labimage {
+    height: 120px;
+  }
+  
+  .cardcontent {
+    padding: 0.7rem 0.8rem;
+  }
+  
+  .cardtitle {
+    font-size: 0.85rem;
+  }
+}
+
+/* Orientación horizontal */
+@media (max-height: 500px) and (orientation: landscape) {
+  .partearriba {
+    margin-bottom: 0.5rem;
+  }
+  
+  .titulo {
+    margin-bottom: 1rem;
+  }
+  
+  .labimage {
+    height: 100px;
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .labitem {
+    transition: none;
+  }
+  
+  .labitem:hover {
+    transform: none;
+  }
+}
+
+/* Focus para accesibilidad */
+.flecha:focus,
+.buscador:focus,
+.labitem:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Hover solo en dispositivos que lo soporten */
+@media (hover: hover) {
+  .labitem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .flecha:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }

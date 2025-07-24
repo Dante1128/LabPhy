@@ -31,41 +31,42 @@ const LabDetail = () => {
   }
 
   return (
-    <div className="contenido">
-      <div className="partearriba">
-        <button className={styles.backButton} onClick={() => navigate(-1)}>
-        <i class="material-icons icon" title="Izquierda">arrow_back</i>
-        </button>
-        
-        <div className="image"><img src="/image/logo.png" alt="" /></div>
-      </div>
-     
+    <div className={styles.contenido}>
+  <div className={styles.partearriba}>
+    <button className={styles.backButton} onClick={() => navigate(-1)}>
+      <i className="material-icons icon" title="Izquierda">arrow_back</i>
+    </button>
 
-      <h2 className="titulo">{item.title}</h2>
-
-      <div style={{ position: "relative", height: "300px" }}>
-        {/* Mensaje de carga */}
-        {isLoading && <p className={styles.loadingMessage}>Cargando componente...</p>}
-        {isLoading && <div className={styles.loader}></div>}
-
-        <Canvas style={{ height: "100%" }}>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[5, 5, 5]} intensity={1} />
-
-          <Suspense fallback={null}>
-            <ModelViewer modelPath={item.model} setIsLoading={setIsLoading} />
-          </Suspense>
-
-          <OrbitControls />
-        </Canvas>
-      </div>
-
-      <p className={styles["centered-text"]}>{item.description}</p>
-
-      <a href={item.video} target="_blank" rel="noopener noreferrer">
-        <img src="/image/image.png" alt="Ver video" /> Ver Video en YouTube
-      </a>
+    <div className={styles.image}>
+      <img src="/image/logo.png" alt="Logo" />
     </div>
+  </div>
+
+  <h2 className={styles.titulo}>{item.title}</h2>
+
+  <div style={{ position: "relative", height: "300px" }}>
+    {isLoading && <p className={styles.loadingMessage}>Cargando componente...</p>}
+    {isLoading && <div className={styles.loader}></div>}
+
+    <Canvas style={{ height: "100%" }}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[5, 5, 5]} intensity={1} />
+
+      <Suspense fallback={null}>
+        <ModelViewer modelPath={item.model} setIsLoading={setIsLoading} />
+      </Suspense>
+
+      <OrbitControls />
+    </Canvas>
+  </div>
+
+  <p className={styles["centered-text"]}>{item.description}</p>
+
+  <a href={item.video} target="_blank" rel="noopener noreferrer">
+    <img src="/image/image.png" alt="Ver video" /> Ver Video en YouTube
+  </a>
+</div>
+
   );
 };
 

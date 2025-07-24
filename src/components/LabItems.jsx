@@ -1,61 +1,72 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Labitems.css";
 
 const labItems = [
-  { name: "Balanza Digital", route: "balanza-digital", category: "categoria-1", image: "/image/balanza-digital.png" },
-  { name: "Fuente de poder", route: "fuente-de-energia", category: "categoria-1", image: "/assets/images/pendulo.jpg" },
-  { name: "Péndulo", route: "pendulo", category: "categoria-2", image: "/assets/images/pendulo.jpg" },
-  { name: "Sensor Ultrasonico", route: "sensor-ultrasonico", category: "categoria-3", image: "/assets/images/balanza.jpg" },
-  { name: "Vernier", route: "vernier", category: "categoria-3", image: "/assets/images/tubo_venturi.jpg" },
-  { name: "Vernier Digital", route: "vernier-digital", category: "categoria-3", image: "/assets/images/tubo_venturi.jpg" },
+  { name: "Balanza Digital", route: "balanza-digital", image: "/image/balanza-digital.png" },
+  { name: "Fuente de poder", route: "fuente-de-energia", image: "/assets/images/pendulo.jpg" },
+  { name: "Péndulo", route: "pendulo", image: "/assets/images/pendulo.jpg" },
+  { name: "Sensor Ultrasonico", route: "sensor-ultrasonico", image: "/assets/images/balanza.jpg" },
+  { name: "Vernier", route: "vernier", image: "/assets/images/tubo_venturi.jpg" },
+  { name: "Vernier Digital", route: "vernier-digital", image: "/assets/images/tubo_venturi.jpg" },
 ];
 
 const LabItems = () => {
-  const { category } = useParams();
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
 
-  const filteredItems = labItems.filter(
-    (item) =>
-      item.category === category &&
-      item.name.toLowerCase().includes(search.toLowerCase())
+  // Filtrar solo por búsqueda, sin categorías
+  const filteredItems = labItems.filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <div className="contenidoitem">
       <div className="partearriba">
-        <div className="volver"><a href="" className="flecha"><i class="material-icons icon" title="Izquierda">arrow_back</i></a></div>
-        <div className="image"><img src="/image/logo.png" alt="" /></div>
+        <button onClick={() => navigate(-1)} className="flecha" aria-label="Volver">
+          <i className="material-icons icon">arrow_back</i>
+        </button>
+        <div className="image">
+          <img src="/image/logo.png" alt="Logo LabPhy" />
+        </div>
+        <div className="spacer"></div> {/* Para centrar el logo */}
       </div>
       
       <div className="barrabuscador">
         <input
           type="text"
-          placeholder="Buscar..."
+          placeholder="Buscar equipo de laboratorio..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="buscador"
         />
       </div>
-      <div className="titulo">
-
       
-        <h2 className="letras">Elementos de laboratorio - {category}</h2>
+      <div className="titulo">
+        <h2 className="letras">
+          {search ? `Resultados para "${search}"` : "Equipos de Laboratorio"}
+        </h2>
       </div>
+      
       <div className="labcontainer">
         {filteredItems.length > 0 ? (
           filteredItems.map((item, index) => (
             <Link to={`/lab/${item.route}`} key={index} className="labitem">
-
-
               <div className="labcard">
                 <img src={item.image} alt={item.name} className="labimage" />
-                <button className="botone">{item.name} ➝</button>
+                <div className="cardcontent">
+                  <h3 className="cardtitle">{item.name}</h3>
+                  <span className="cardarrow">➝</span>
+                </div>
               </div>
             </Link>
           ))
         ) : (
-          <p className="parrafo">No se encontraron resultados.</p>
+          <div className="noresults">
+            <p className="parrafo">
+              {search ? "No se encontraron equipos con ese nombre." : "Cargando equipos..."}
+            </p>
+          </div>
         )}
       </div>
     </div>
