@@ -34,6 +34,197 @@
       "description": "Instrumento de medición que muestra resultados precisos en una pantalla digital. Facilita la lectura de longitudes, diámetros y profundidades con mayor rapidez y exactitud que el vernier convencional.",
       "model": "/models/vernier_digital.glb",
       "video": "https://www.youtube.com/watch?v=MmptDtBlwvI"
+    },
+    "sensor-campo-magnetico":{
+      "title":"Sensor de Campo magnetico",
+      "description":"Mide la intensidad y dirección de campos magnéticos. Permite estudiar fenómenos como la inducción y el comportamiento de imanes, bobinas y corrientes eléctricas.",
+      "model":"/models/Sensor de campo magnetico.glb",
+      "video":"https://www.youtube.com/watch?v=mhkzvYjzZS8"
+    },
+    "interface-computadora-pasco":{
+      "title":"Interface de computadora PASCO",
+      "description":"Convierte señales analógicas de sensores en datos digitales. Facilita la recolección, análisis y visualización de datos experimentales en tiempo real con software PASCO.",
+      "model":"/models/Interfaz de computadora PASCO.glb",
+      "video":"https://www.youtube.com/watch?v=8HQX7I89b5U"
+    },
+    "capacitor-placas-paralelas":{
+      "title":"Capacitor de placas paralelas",
+      "description":"Almacena energía entre dos placas metálicas separadas por un dieléctrico. Sirve para estudiar capacitancia, carga, voltaje y comportamiento eléctrico en circuitos.",
+      "model":"/models/Capacitor de placas paralelas.glb",
+      "video":"https://www.youtube.com/watch?v=QhzZn2qK3TY"
+    },
+    "generador-vapor":{
+      "title":"Generador de Vapor",
+      "description":"Equipo electrónico que calienta un líquido hasta su punto de ebullición, generando vapor. Es útil en prácticas de calorimetría y estudios de cambios de estado térmicos.",
+      "model":"/models/Generador de Vapor.glb",
+      "video":""
+    },
+    "dilatometro-reloj":{
+      "title":"Dilatometro de reloj",
+      "description":"Mide con precisión la dilatación térmica de varillas metálicas al aplicar calor. Permite observar cómo los metales se expanden con la temperatura en experimentos de física.",
+      "model":"/models/Dilatometro de reloj.glb",
+      "video":""
+    },
+    "termometro-digital":{
+      "title":"Termometro digital",
+      "description":"Instrumento electrónico para medir la temperatura de forma rápida y precisa. Muestra los valores en una pantalla digital y se emplea en diversas prácticas térmicas.",
+      "model":"/models/Termometro digital.glb",
+      "video":"https://www.youtube.com/watch?v=C4kPb5i4r_4"
+    },
+    "distanciometro-laser":{
+      "title":"Distanciometro laser",
+      "description":"Equipo para medir distancias largas y grados de inclinacion",
+      "model":"/models/medidor laser.glb",
+      "video":""
+    },
+    "calorimetro-mezcla":{
+      "title":"Calorimetro de Mezcla",
+      "description":"Equipo para determinar el calor especifico de una sustancia",
+      "model":"/models/Calorimetro de mezcla.glb",
+      "video":""
+    },
+    "lf-sensor-movimiento":{
+      "title":"L.F. Sensor de movimiento",
+      "description":"Detecta y mide el movimiento de objetos en un entorno. Útil en estudios de cinemática, velocidad y desplazamiento en prácticas de dinámica o física del movimiento.",
+      "model":"/models/sensor de movimiento rotatorio.glb",
+      "video":"https://www.youtube.com/watch?v=Efsdlicjjpo"
+    },
+    "lf-sensor-luz":{
+      "title":"L.F. Sensor de luz",
+      "description":"Mide la intensidad de la luz en diferentes condiciones. Se usa para analizar la variación de iluminación, reflexión, absorción y transmisión en experimentos ópticos.",
+      "model":"/models/L.F. Sensor de Luz.glb",
+      "video":""
+    },
+    "lf-sensor-aceleracion":{
+      "title":"L.F. Sensor de aceleracion",
+      "description":"Registra cambios de velocidad en el tiempo. Permite estudiar aceleración, fuerza neta y movimiento en cuerpos sometidos a distintos tipos de interacción o inclinación.",
+      "model":"/models/L.F. Sensor de aceleracion.glb",
+      "video":"https://www.youtube.com/watch?v=7KzCcamY408"
+    },
+    "lf-sensor-carga":{
+      "title":"L.F. Sensor de carga",
+      "description":"Mide la cantidad de carga eléctrica almacenada o transferida. Es útil en estudios de electrostática, capacitores y experimentos de interacción entre cuerpos cargados.",
+      "model":"/models/sensor de carga.glb",
+      "video":""
+    },
+    "lf-sensor-fotopuerta":{
+      "title":"L.F. Sensor de fotopuerta ME",
+      "description":"Detecta el paso de objetos a través de un haz de luz. Se usa para medir tiempos, velocidades y aceleraciones en sistemas en movimiento con alta precisión.E",
+      "model":"/models/fotopuerta.glb",
+      "video":"https://www.youtube.com/watch?v=aonj8JlMFi8"
+    },
+    "lf-sensor-voltaje":{
+      "title":"L.F. Sensor de voltaje",
+      "description":"Mide la diferencia de potencial eléctrico entre dos puntos. Se utiliza para analizar circuitos, estudiar leyes de Ohm y verificar relaciones entre corriente y voltaje.",
+      "model":"/models/sensor de voltaje.glb",
+      "video":""
+    },
+    "lf-sensor-campo-magnetico":{
+      "title":"L.F. Sensor de campo magnetico",
+      "description":"Sensor de campo magnetico",
+      "model":"/models/Sensor de campo magnetico.glb",
+      "video":""
+    },
+    "lf-escala-64b":{
+      "title":"L.F. Escala 64B",
+      "description":"Accesorio que permite medir desplazamientos o posiciones con precisión. Se usa junto a sensores en estudios de movimiento lineal y calibración en experimentos de física.",
+      "model":"/models/escala 64B.glb",
+      "video":""
+    },
+    "lf-escala-me":{
+      "title":"L.F. Escala ME",
+      "description":"Dispositivo de medición que sirve para registrar posiciones exactas en actividades con sensores. Es útil para estudiar trayectorias y calibrar desplazamientos en línea recta.",
+      "model":"/models/L.F. Escala ME.glb",
+      "video":""
+    },
+    "lf-sensor-temperatura":{
+      "title":"L.F. Sensor de temperatura",
+      "description":"Mide cambios de temperatura con precisión en distintas sustancias o ambientes. Se utiliza en calorimetría, estados térmicos y estudios de transferencia de calor.",
+      "model":"/models/sensor de temperatura.glb",
+      "video":"https://www.youtube.com/watch?v=cnvzYTF48Tg"
+    },
+    "amplificador-potencia1":{
+      "title":"Amplificador de potencia1",
+      "description":"Dispositivo que incrementa señales eléctricas para alimentar sensores o motores. Útil en prácticas que requieren medir, regular o amplificar potencia en circuitos de laboratorio.",
+      "model":"/models/amplificador de potencia_1.glb",
+      "video":"https://www.youtube.com/watch?v=oKmXaLlvr6c"
+    },
+    "amplificador-potencia2":{
+      "title":"Amplificador de potencia2",
+      "description":"Equipo que amplifica potencia eléctrica para distintos ensayos. Permite observar el comportamiento de dispositivos ante señales intensificadas en estudios de energía y electrónica.",
+      "model":"/models/amplificador de potencia_2.glb",
+      "video":""
+    },
+    "amplificador-potencia3":{
+      "title":"Amplificador de potencia3",
+      "description":"Herramienta usada para aumentar la potencia de señales. Es clave en prácticas donde se analizan efectos eléctricos de alta potencia sobre cargas o instrumentos conectados.",
+      "model":"/models/amplificador de potencia_3.glb",
+      "video":""
+    },
+    "minilaboratorio-solar-metal":{
+      "title":"Minilaboratorio Solar de metal",
+      "description":"Equipo compacto que simula el aprovechamiento de energía solar. Permite realizar experimentos sobre captación, conversión y uso de energía solar en distintas aplicaciones prácticas.",
+      "model":"/models/MINILABORATORIO SOLAR.glb",
+      "video":""
+    },
+     "equipo-electricidad":{
+      "title":"Equipo de electricidad ",
+      "description":"Equipo para medir voltaje, amperios de sistemas electricos",
+      "model":"/models/multimetros digitales marca MCP.glb",
+      "video":""
+    },
+     "dinamometro":{
+      "title":"Dinamometro de 300KG",
+      "description":"Instrumento que mide fuerzas aplicadas hasta 300 kg. Se usa para determinar el peso o fuerza de tracción en objetos, útil en estudios de mecánica y dinámica en el laboratorio.",
+      "model":"/models/DINAMOMETRO DE 300.glb",
+      "video":"https://www.youtube.com/watch?v=oHbGIZcWyvk"
+    },
+     "basic-electrometer":{
+      "title":"Basic Electrometer",
+      "description":"Equipo o dispotivo para medir la carga electrica y la diferencia de potencial",
+      "model":"/models/Basic electrometer.glb",
+      "video":""
+    },
+     "tacometro-laser":{
+      "title":"Tacometro Laser",
+      "description":"Dispositivo portátil que mide la velocidad de rotación del eje de motores usando tecnología láser. Ideal para análisis de máquinas y estudio de dinámica rotacional en laboratorio.",
+      "model":"/models/Tacometro Laser.glb",
+      "video":"https://www.youtube.com/watch?v=i61s7CqYPcM"
+    },
+     "lanzadores-esfereas":{
+      "title":"Lanzadores de Esferas PASCO ME6625",
+      "description":"Dispositivo para lanzar esferas metalicas en Movimiento parabolico ",
+      "model":"/models/lanzador de esferas PASCO.glb",
+      "video":""
+    },
+     "banco-dinamica":{
+      "title":"Banco de Dinamica ",
+      "description":"",
+      "model":"/models/banco-dinamica.glb",
+      "video":"https://www.youtube.com/watch?v=v5oUiTAaeH0"
+    },
+     "balanza-precision-marca":{
+      "title":"Balanza de precision Marca AND",
+      "description":"Balanza de plastico color blanco, equipo para medir la masa",
+      "model":"/models/Balanza de precision marca AND.glb",
+      "video":""
+    },
+     "reloj-cronometro-blanco":{
+      "title":"Reloj cronometro Blanco",
+      "description":"Dispositivo manual para medir intervalos de tiempo con precisión. Usado en prácticas experimentales para registrar duraciones y analizar fenómenos temporales en laboratorio de física.",
+      "model": "/models/Reloj cronometro blanco.glb",
+      "video":"https://www.youtube.com/watch?v=fMsUtRLUf3Y"
+    },
+     "interfaz-sensores":{
+      "title":"Interfaz para sensores ",
+      "description":"Equipo para conectar sensores de vernier con PC",
+      "model": "/models/Interfaz para sensores.glb",
+      "video":""
+    },
+     "cronometro-tiempo-plastico":{
+      "title":"Cronometro de tiempo plastico blanco",
+      "description":"Cronómetro portátil fabricado en plástico blanco que permite medir tiempos con exactitud. Ideal para ejercicios que requieren control temporal en actividades físicas o experimentales.",
+      "model": "/models/Cronometro de tiempo plastico blanco.glb",
+      "video":""
     }
-  }
-  
+}
