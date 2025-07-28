@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Labitems.css";
 
 const labItems = [
-  { name: "Balanza Digital", route: "balanza-digital", image: "/image/balanza-digital.png" },
+ // { name: "Balanza Digital", route: "balanza-digital", image: "/image/balanza-digital.png" },
   //{ name: "Fuente de poder", route: "fuente-de-energia", image: "/image/pendulo.jpg" },
   { name: "Sensor de Campo magnético", route: "sensor-campo-magnetico", image: "/image/2-Sensor-de-campo-magnetico.jpg" },
   { name: "Interface de computadora PASCO", route: "interface-computadora-pasco", image: "/image/3-Interfaz-de-computadora-PASCO.png" },
