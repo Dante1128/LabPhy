@@ -1,251 +1,569 @@
 {
     "balanza-digital": {
-      "title": "Balanza Digital",
-      "description": "Es un instrumento electrónico que permite medir el peso de objetos de forma precisa y rápida. Utiliza sensores que convierten la presión en datos digitales, los cuales se muestran en una pantalla. Es común en comercios, laboratorios e industrias.",
+      "title": "Balanza Digital de Precisión",
+      "description": "Instrumento electrónico de alta precisión diseñado para medir la masa de objetos con exactitud. Utiliza células de carga y sensores strain-gauge que convierten la fuerza aplicada por el objeto en una señal eléctrica, la cual es procesada por un microcontrolador y mostrada digitalmente en una pantalla LCD retroiluminada. Es indispensable en laboratorios químicos, farmacéuticos, comercios y control de calidad industrial, donde se requiere exactitud en las mediciones de masa. Su función de tara permite pesar solo el contenido deseado, descontando el peso del recipiente.",
       "model": "/models/balanza_digital.glb",
       "video": "https://www.youtube.com/watch?v=R2ZMwfWhb0U",
       "specs": [
-        "Capacidad máxima: 5000g",
-        "Precisión: 0.1g",
+        "Capacidad máxima: 5000 g",
+        "Precisión: 0.1 g",
+        "Unidades: g, kg, oz, lb",
         "Pantalla LCD retroiluminada",
-        "Alimentación: 2x pilas AA",
-        "Función tara y autoapagado"
+        "Plataforma de acero inoxidable",
+        "Alimentación: 2x pilas AA o adaptador AC",
+        "Función tara y autoapagado",
+        "Interface de comunicación opcional"
       ]
     },
     "fuente-de-energia": {
-      "title": "Fuente de poder",
-      "description": "Dispositivo que convierte la energía eléctrica de una fuente (como un tomacorriente) en el voltaje y corriente adecuados para alimentar aparatos electrónicos. Es esencial para el funcionamiento seguro y estable de muchos equipos.",
+      "title": "Fuente de Alimentación Regulada",
+      "description": "Dispositivo electrónico esencial que convierte la corriente alterna (AC) de la red eléctrica en corriente continua (DC) estable y regulada, proporcionando voltaje y corriente ajustables para alimentar circuitos y equipos electrónicos de manera segura. Incorpora protecciones contra sobrecorriente, sobretensión y cortocircuitos, making it fundamental para el desarrollo y prueba de prototipos electrónicos, mantenimiento de equipos y en bancos de prueba de laboratorio. Sus display digitales muestran valores precisos de voltaje y corriente en tiempo real.",
       "model": "/models/Fuente+de+Energia.glb",
       "video": "https://www.youtube.com/watch?v=wNG_OIgNs18w",
       "specs": [
-        "Capacidad máxima: 5000g",
-        "Precisión: 0.1g",
-        "Pantalla LCD retroiluminada",
-        "Alimentación: 2x pilas AA",
-        "Función tara y autoapagado"
+        "Rango de voltaje: 0-30 V DC ajustable",
+        "Rango de corriente: 0-5 A ajustable",
+        "Regulación de línea: < 0.01%",
+        "Regulación de carga: < 0.01%",
+        "Display digital dual (V y A)",
+        "Protecciones: Sobrecorriente, sobretensión, cortocircuito",
+        "Conectores de salida: Terminales banana y binding posts",
+        "Alimentación: 110/220 V AC"
       ]
     },
     "pendulo": {
-      "title": "Péndulo",
-      "description": " Objeto suspendido de un punto fijo que oscila libremente bajo la acción de la gravedad. Se usa en relojes, experimentos físicos y mediciones de tiempo.",
+      "title": "Péndulo Simple para Demostraciones",
+      "description": "Sistema físico clásico consistente en una masa suspendida de un punto fijo por un hilo o varilla de longitud constante que oscila libremente bajo la acción de la gravedad. Es utilizado para demostrar principios fundamentales de movimiento armónico simple, conservación de energía, y para determinar experimentalmente el valor de la aceleración gravitatoria (g). Su período de oscilación depende únicamente de la longitud del hilo y de la gravedad, making it ideal para estudios de cinemática y dinámica en física básica y avanzada.",
       "model": "/models/pendulo.glb",
-      "video": "https://www.youtube.com/watch?v=hpudURuEk-M"
+      "video": "https://www.youtube.com/watch?v=hpudURuEk-M",
+      "specs": [
+        "Material: Masa metálica, hilo/varilla ajustable",
+        "Longitud variable: 0.2 - 1.5 m",
+        "Soporte metálico con escala graduada",
+        "Precisión en medición angular: ±1°",
+        "Incluye transportador para medir amplitud",
+        "Aplicaciones: Medición de g, estudio de M.A.S."
+      ]
     },
     "sensor-ultrasonico": {
-      "title": "Sensor Ultrasonico",
-      "description": "Dispositivo que mide distancias emitiendo ondas de sonido de alta frecuencia y calculando el tiempo que tardan en reflejarse en un objeto. Es usado en robótica, vehículos y sistemas de medición.",
+      "title": "Sensor de Distancia por Ultrasonido",
+      "description": "Transductor que funciona emitiendo pulsos de ondas sonoras de alta frecuencia (ultrasonido, typically 40 kHz) imperceptibles al oído humano y midiendo el tiempo que tarda en recibir el eco reflejado por un objeto. Este tiempo de vuelo es convertido en distancia con alta precisión mediante un microprocesador interno. Es ampliamente utilizado en sistemas de automatización, robótica móvil (para evitar obstáculos), parqueo automático de vehículos, y en industria para control de nivel y medición sin contacto.",
       "model": "/models/sensor_ultrasonico.glb",
-      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw"
+      "video": "https://www.youtube.com/watch?v=fIHOpWN8ilw",
+      "specs": [
+        "Rango de medición: 2 cm - 4 m",
+        "Precisión: ±3 mm",
+        "Frecuencia de operación: 40 kHz",
+        "Voltaje de operación: 5 V DC",
+        "Salida: Señal digital (TTL) o análoga",
+        "Ángulo de detección: < 15°",
+        "Resistente a interferencias de luz"
+      ]
     },
     "vernier": {
-      "title": "Vernier",
-      "description": "Instrumento de medición precisa que permite determinar longitudes, diámetros o profundidades con gran exactitud. Se usa en mecánica, ingeniería y laboratorios.",
+      "title": "Calibrador Pie de Rey Vernier",
+      "description": "Instrumento de medición mecánico de precisión, también conocido como pie de rey, utilizado para medir dimensiones internas, externas y profundidades con una exactitud superior a una regla convencional. Su diseño consiste en una escala principal fija y una escala móvil vernier que permite realizar mediciones fraccionales mediante la alineación de sus divisiones. Fabricado en acero inoxidable templado, es una herramienta fundamental en talleres de mecanizado, laboratorios de metrología e ingeniería.",
       "model": "/models/vernier.glb",
-      "video": "https://www.youtube.com/watch?v=Ynf6wUqp7QI"
+      "video": "https://www.youtube.com/watch?v=Ynf6wUqp7QI",
+      "specs": [
+        "Rango de medición: 0-150 mm / 0-6 pulgadas",
+        "Precisión (Resolución): 0.05 mm / 1/128 pulgada",
+        "Material: Acero inoxidable satinado",
+        "Bordes de medición rectificados y pulidos",
+        "Incluye escala métrica y pulgadas",
+        "Freno de fijación para lecturas"
+      ]
     },
     "vernier-digital": {
-      "title": "Vernier Digital",
-      "description": "Instrumento de medición que muestra resultados precisos en una pantalla digital. Facilita la lectura de longitudes, diámetros y profundidades con mayor rapidez y exactitud que el vernier convencional.",
+      "title": "Calibrador Digital con Display LCD",
+      "description": "Evolución del calibrador vernier tradicional que incorpora un sistema de encoder digital para capturar el desplazamiento, mostrando la medición directamente en una pantalla LCD de fácil lectura. Elimina la necesidad de interpretar escalas vernier, reduciendo errores de paralaje y aumentando la velocidad de medición. Funciones adicionales como el cero arbitrario, conversión entre sistemas métrico/imperial, y salida de datos lo hacen ideal para control estadístico de procesos y aplicaciones de inspección rápida.",
       "model": "/models/vernier_digital.glb",
-      "video": "https://www.youtube.com/watch?v=MmptDtBlwvI"
+      "video": "https://www.youtube.com/watch?v=MmptDtBlwvI",
+      "specs": [
+        "Rango de medición: 0-150 mm / 0-6”",
+        "Precisión: ±0.02 mm / ±0.001”",
+        "Resolución: 0.01 mm / 0.0005”",
+        "Pantalla LCD digital",
+        "Función de preselección (TARE)",
+        "Salida de datos: USB o RS-232",
+        "Batería: Pila de botón CR2032",
+        "Material: Acero inoxidable resistente a la corrosión"
+      ]
     },
     "sensor-campo-magnetico":{
-      "title":"Sensor de Campo magnetico",
-      "description":"Mide la intensidad y dirección de campos magnéticos. Permite estudiar fenómenos como la inducción y el comportamiento de imanes, bobinas y corrientes eléctricas.",
+      "title":"Sensor de Campo Magnético 3-Axis",
+      "description":"Dispositivo capaz de medir la intensidad (en Tesla o Gauss) y la dirección de campos magnéticos estáticos o variables en el tiempo. Utiliza el efecto Hall o bobinas de inducción para detectar campos generados por imanes permanentes, corrientes eléctricas o el campo terrestre. Es crucial para estudiar fenómenos de electromagnetismo, mapear campos, verificar la Ley de Faraday, y en aplicaciones como sensores de posición sin contacto y brújulas electrónicas. Algunos modelos incluyen cabezal giratorio para medir la dirección del campo.",
       "model":"/models/Sensor de campo magnetico.glb",
       "video":"https://www.youtube.com/watch?v=mhkzvYjzZS8",
       "specs": [
-        "Capacidad máxima: 5000g",
-        "Precisión: 0.1g",
-        "Pantalla LCD retroiluminada",
-        "Alimentación: 2x pilas AA",
-        "Función tara y autoapagado"
+        "Rango: ±1000 mT (±10,000 Gauss)",
+        "Resolución: 0.1 mT",
+        "Tipo: Efecto Hall 3-ejes",
+        "Cabezal giratorio para medir dirección",
+        "Respuesta en frecuencia: DC to 5 kHz",
+        "Salida análoga o digital",
+        "Alimentación: 5 V DC"
       ]
     },
     "interface-computadora-pasco":{
-      "title":"Interface de computadora PASCO",
-      "description":"Convierte señales analógicas de sensores en datos digitales. Facilita la recolección, análisis y visualización de datos experimentales en tiempo real con software PASCO.",
+      "title":"Interfaz de Adquisición de Datos PASCO",
+      "description":"Dispositivo central que actúa como puente entre una gran variedad de sensores análogos y digitales PASCO y una computadora. Convierte las señales físicas capturadas por los sensores (como voltaje, resistencia) en datos digitales de alta precisión que son transmitidos via USB o inalámbricamente al software Capstone o SPARKvue. Permite la visualización, registro y análisis en tiempo real de experimentos de física, química y biología, facilitando el aprendizaje basado en indagación.",
       "model":"/models/Interfaz de computadora PASCO.glb",
-      "video":"https://www.youtube.com/watch?v=8HQX7I89b5U"
+      "video":"https://www.youtube.com/watch?v=8HQX7I89b5U",
+      "specs": [
+        "Conversor analógico-digigital de 24 bits",
+        "4–8 entradas para sensores analógicos/digitales",
+        "Tasa de muestreo: Hasta 100,000 muestras/segundo",
+        "Conexión: USB 2.0/3.0 y Bluetooth",
+        "Alimentación: USB o fuente externa",
+        "Software incluido: PASCO Capstone",
+        "Compatibilidad con más de 70 sensores"
+      ]
     },
     "capacitor-placas-paralelas":{
-      "title":"Capacitor de placas paralelas",
-      "description":"Almacena energía entre dos placas metálicas separadas por un dieléctrico. Sirve para estudiar capacitancia, carga, voltaje y comportamiento eléctrico en circuitos.",
+      "title":"Capacitor de Placas Paralelas Ajustable",
+      "description":"Dispositivo fundamental en electrostática que consiste en dos placas conductoras paralelas de área conocida, separadas por una distancia variable y con la posibilidad de insertar diferentes materiales dieléctricos entre ellas. Se utiliza para demostrar experimentalmente los principios de la capacitancia, cómo esta depende del área, la distancia de separación y la constante dieléctrica del material insertado. Permite estudiar la Ley de Gauss, el almacenamiento de carga y energía, y los fenómenos de polarización.",
       "model":"/models/Capacitor de placas paralelas.glb",
-      "video":"https://www.youtube.com/watch?v=QhzZn2qK3TY"
+      "video":"https://www.youtube.com/watch?v=QhzZn2qK3TY",
+      "specs": [
+        "Placas metálicas ajustables (diámetro: 10–20 cm)",
+        "Separación variable: 1-10 cm con escala micrométrica",
+        "Dieléctricos intercambiables: aire, vidrio, acrílico, etc.",
+        "Capacidad típica: 100–500 pF",
+        "Soporte aislante de material dieléctrico",
+        "Conexiones para generador de alto voltaje y electrómetro"
+      ]
     },
     "generador-vapor":{
-      "title":"Generador de Vapor",
-      "description":"Equipo electrónico que calienta un líquido hasta su punto de ebullición, generando vapor. Es útil en prácticas de calorimetría y estudios de cambios de estado térmicos.",
+      "title":"Generador de Vapor Eléctrico de Laboratorio",
+      "description":"Equipo de calefacción eléctrica diseñado para hervir agua y producir un flujo constante y controlado de vapor seco. Consta de un tanque de agua resistente a la corrosión, un elemento calefactor encapsulado, termostato de seguridad y válvulas de salida. Es utilizado en experimentos de calorimetría para determinar calores latentes de vaporización, en estudios de transferencia de calor, y para demostrar los principios de las máquinas térmicas y la termodinámica en un entorno de laboratorio seguro.",
       "model":"/models/Generador de Vapor.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Capacidad del tanque: 1-2 litros",
+        "Potencia del elemento calefactor: 1000-1500 W",
+        "Temperatura máxima: 120°C",
+        "Presión de operación: Segura, de baja presión",
+        "Termostato de seguridad y válvula de alivio",
+        "Material: Acero inoxidable y aislamiento térmico",
+        "Tiempo para generar vapor: <10 min"
+      ]
     },
     "dilatometro-reloj":{
-      "title":"Dilatometro de reloj",
-      "description":"Mide con precisión la dilatación térmica de varillas metálicas al aplicar calor. Permite observar cómo los metales se expanden con la temperatura en experimentos de física.",
+      "title":"Dilatómetro de Reloj Comparador Mecánico",
+      "description":"Instrumento de precisión diseñado para medir la dilatación lineal de materiales (especialmente metales) cuando son sometidos a cambios de temperatura. Consiste en un tubo contenedor donde se inserta la varilla de prueba, un sistema de calentamiento uniforme y un reloj comparador mecánico (o dial indicador) de alta sensibilidad que amplifica y muestra micrométricamente el más mínimo cambio en la longitud de la muestra. Fundamental para verificar el coeficiente de dilatación térmica lineal de los materiales.",
       "model":"/models/Dilatometro de reloj.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Tubo contenedor aislado y soporte metálico",
+        "Escala del comparador: 0-10 mm",
+        "Precisión del comparador: 0.01 mm",
+        "Rango de temperatura: ambiente to 100°C",
+        "Sistema de calentamiento por agua o resistencia",
+        "Varillas de muestra de diferentes materiales (Al, Cu, Fe, Latón)"
+      ]
     },
     "termometro-digital":{
-      "title":"Termometro digital",
-      "description":"Instrumento electrónico para medir la temperatura de forma rápida y precisa. Muestra los valores en una pantalla digital y se emplea en diversas prácticas térmicas.",
+      "title":"Termómetro Digital con Sonda",
+      "description":"Instrumento de medición de temperatura que utiliza un sensor electrónico (como un termistor, termopar o RTD) para convertir la energía térmica en una señal eléctrica que es procesada y mostrada numéricamente en una pantalla digital. Supera a los termómetros analógicos en velocidad de respuesta, precisión y facilidad de lectura. La sonda externa permite medir temperaturas en líquidos, gases, superficies y ambientes de difícil acceso. Es ubiquitous en laboratorios científicos, industrias alimentarias y aplicaciones médicas.",
       "model":"/models/Termometro digital.glb",
-      "video":"https://www.youtube.com/watch?v=C4kPb5i4r_4"
+      "video":"https://www.youtube.com/watch?v=C4kPb5i4r_4",
+      "specs": [
+        "Rango: -50 °C a 300 °C (-58 °F to 572 °F)",
+        "Precisión: ±0.1 °C en rango estándar",
+        "Resolución: 0.01 °C",
+        "Tipo de sensor: Termistor de alta precisión",
+        "Sonda de acero inoxidable resistente",
+        "Tiempo de respuesta: < 5 segundos",
+        "Pantalla LCD con retroiluminación",
+        "Función HOLD y registro de MAX/MIN"
+      ]
     },
     "distanciometro-laser":{
-      "title":"Distanciometro laser",
-      "description":"Equipo para medir distancias largas y grados de inclinacion",
+      "title":"Distanciómetro Láser de Precisión",
+      "description":"Instrumento de medición de distancia que emplea un haz láser clase II seguro para medir con extrema precisión la distancia a un objeto mediante el método de tiempo de vuelo o diferencia de fase. Apuntando el láser a una superficie, calcula la distancia basándose en el tiempo que tarda la luz en reflejarse. Además de distancia, muchos modelos calculan área, volumen, y tienen inclinómetros para medir ángulos. Es indispensable en topografía, construcción, interiorismo y para aplicaciones industriales donde se requieren mediciones largas y rápidas.",
       "model":"/models/medidor laser.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Alcance: 0.05–100 m (dependiendo de la luz ambiental)",
+        "Precisión: ±1 mm",
+        "Puntero láser: 635 nm, clase II",
+        "Medición de ángulos: Inclinómetro integrado de 0-360°",
+        "Funciones: Medición continua, área, volumen, Pitágoras",
+        "Memoria para almacenar valores",
+        "Pantalla LCD con retroiluminación",
+        "Alimentación: Baterías Li-ion recargables"
+      ]
     },
     "calorimetro-mezcla":{
-      "title":"Calorimetro de Mezcla",
-      "description":"Equipo para determinar el calor especifico de una sustancia",
+      "title":"Calorímetro de Mezcla de Laboratorio",
+      "description":"Dispositivo utilizado para determinar el calor específico de una sustancia o el calor involucrado en una reacción química mediante el método de mezclas. Consiste en un recipiente aislado térmicamente (usualmente con una camisa de aire o vacuum) para minimizar las pérdidas de calor al exterior, un agitador para homogenizar la temperatura y un termómetro preciso. Al mezclar dos sustancias a diferentes temperaturas y medir la temperatura de equilibrio, se aplica el principio de conservación de la energía (Qganado = -Qperdido).",
       "model":"/models/Calorimetro de mezcla.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Recipiente aislante (doble pared de acero inoxidable o plástico)",
+        "Capacidad: 100 - 250 ml",
+        "Agitador integrado de vidrio o acero",
+        "Tapa con orificios para termómetro y agitador",
+        "Incluye termómetro digital o de precisión",
+        "Baja capacidad calorífica para mayor precisión",
+        "Aplicaciones: Calor específico, calor de reacción"
+      ]
     },
     "lf-sensor-movimiento":{
-      "title":"L.F. Sensor de movimiento",
-      "description":"Detecta y mide el movimiento de objetos en un entorno. Útil en estudios de cinemática, velocidad y desplazamiento en prácticas de dinámica o física del movimiento.",
+      "title":"Sensor de Movimiento Rotatorio",
+      "description":"Transductor diseñado específicamente para capturar y cuantificar el movimiento de rotación. Puede medir ángulo, velocidad angular, aceleración angular y número de revoluciones (RPM). Utiliza tecnologías como encoders ópticos o potenciómetros de precisión. Es esencial en el estudio de la dinámica rotacional, momento de inercia, conservación del momento angular, y para analizar el comportamiento de motores, engranajes y sistemas de transmisión en laboratorios de física e ingeniería mecánica.",
       "model":"/models/sensor de movimiento rotatorio.glb",
-      "video":"https://www.youtube.com/watch?v=Efsdlicjjpo"
+      "video":"https://www.youtube.com/watch?v=Efsdlicjjpo",
+      "specs": [
+        "Rango de rotación: 0-360° (continuo para algunos modelos)",
+        "Resolución angular: < 1°",
+        "Salida: Señal analógica (voltaje) o digital (encoder)",
+        "Interface: Compatible con interfaces PASCO/ Vernier",
+        "Incluye poleas y accesorios para experimentos",
+        "Aplicaciones: Medición de torque, velocidad angular, energía cinética rotacional"
+      ]
     },
     "lf-sensor-luz":{
-      "title":"L.F. Sensor de luz",
-      "description":"Mide la intensidad de la luz en diferentes condiciones. Se usa para analizar la variación de iluminación, reflexión, absorción y transmisión en experimentos ópticos.",
+      "title":"Sensor de Intensidad Luminosa (Luxómetro)",
+      "description":"Fotosensor que cuantifica la intensidad de la luz visible incidente en unidades de Lux (lumens por metro cuadrado). Utiliza una fotocelda o fotodiodo cuya resistencia o corriente de salida varía linealmente con la intensidad de la luz. Es crucial para experimentos de óptica donde se estudian la ley del inverso del cuadrado de la distancia, la absorbancia y transmitancia de materiales, la eficiencia de fuentes de luz, y la fotosíntesis en biología. Suele incluir filtros para diferentes longitudes de onda.",
       "model":"/models/L.F. Sensor de Luz.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Rango: 0–100,000 lux (auto-rango)",
+        "Precisión: ±5%",
+        "Espectro de respuesta: Ajustado al ojo humano (fotópica)",
+        "Filtro ajustable para diferentes longitudes de onda",
+        "Resolución: 0.1 lux en bajos niveles",
+        "Tiempo de respuesta: 1 segundo",
+        "Sensor desmontable para mediciones remotas"
+      ]
     },
     "lf-sensor-aceleracion":{
-      "title":"L.F. Sensor de aceleracion",
-      "description":"Registra cambios de velocidad en el tiempo. Permite estudiar aceleración, fuerza neta y movimiento en cuerpos sometidos a distintos tipos de interacción o inclinación.",
+      "title":"Sensor de Aceleración Triaxial",
+      "description":"Acelerómetro compacto que mide la aceleración en tres ejes perpendiculares (X, Y, Z), permitiendo analizar movimientos complejos en el espacio. Basado en tecnología MEMS (Sistemas Microelectromecánicos), detecta fuerzas inerciales. Es fundamental para el estudio de las leyes de Newton, movimiento parabólico, péndulos, vibraciones, colisiones y para verificar la segunda ley de Newton (F = m*a). Su data se puede integrar para obtener velocidad y posición. Usado en laboratorios de física, ingeniería y robótica.",
       "model":"/models/L.F. Sensor de aceleracion.glb",
-      "video":"https://www.youtube.com/watch?v=7KzCcamY408"
+      "video":"https://www.youtube.com/watch?v=7KzCcamY408",
+      "specs": [
+        "Rango: ±16 g (ajustable a ±2g, ±4g, ±8g)",
+        "Resolución: 0.01 g",
+        "Ejes: 3 (Triaxial)",
+        "Frecuencia de muestreo: Hasta 1 kHz",
+        "Salida: Digital (I2C/SPI) o análoga",
+        "Incluye software para graficar aceleración vs. tiempo",
+        "Alimentación: 5 V DC"
+      ]
     },
     "lf-sensor-carga":{
-      "title":"L.F. Sensor de carga",
-      "description":"Mide la cantidad de carga eléctrica almacenada o transferida. Es útil en estudios de electrostática, capacitores y experimentos de interacción entre cuerpos cargados.",
+      "title":"Sensor de Carga Electrostática",
+      "description":"Instrumento altamente sensible diseñado para medir pequeñísimas cantidades de carga eléctrica estática (en Coulombs o microCoulombs). Operando bajo el principio de inducción electrostática, puede detectar la carga neta de un objeto sin contacto directo en algunos modelos. Es pivotal en experimentos de electrostática: verificación de la Ley de Coulomb, estudio de inducción de carga, procesos de carga por fricción, y el comportamiento de conductores y aislantes. A menudo se conecta a un electrómetro para su visualización.",
       "model":"/models/sensor de carga.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Rango: ±10 µC",
+        "Resolución: 1 nC (0.000000001 C)",
+        "Impedancia de entrada: Muy alta (>1 TΩ)",
+        "Tipo: Sensor de contacto o sin contacto (inductivo)",
+        "Interface: Conecta a interfaz PASCO o Vernier",
+        "Aplicaciones: Ley de Coulomb, campos electrostáticos"
+      ]
     },
     "lf-sensor-fotopuerta":{
-      "title":"L.F. Sensor de fotopuerta ME",
-      "description":"Detecta el paso de objetos a través de un haz de luz. Se usa para medir tiempos, velocidades y aceleraciones en sistemas en movimiento con alta precisión.E",
+      "title":"Fotopuerta para Cinemática",
+      "description":"Dispositivo óptico-electrónico que consiste en un emisor de haz infrarrojo y un receptor fototransistor alineados. Detecta el paso de un objeto (usualmente una varilla o bandera de longitud conocida) que interrumpe el haz, midiendo con extrema precisión los intervalos de tiempo involucrados. Con una o dos fotopuertas, se puede determinar velocidad instantánea, aceleración, período de oscilación de un péndulo, y estudiar colisiones en rieles de aire. Es una herramienta básica pero poderosa para cualquier laboratorio de mecánica.",
       "model":"/models/fotopuerta.glb",
-      "video":"https://www.youtube.com/watch?v=aonj8JlMFi8"
+      "video":"https://www.youtube.com/watch?v=aonj8JlMFi8",
+      "specs": [
+        "Tiempo de respuesta: <1 µs",
+        "Longitud de onda del haz: 950 nm (infrarrojo)",
+        "Salida: Digital (TTL), se activa al bloquearse el haz",
+        "Rango de detección: Hasta 2-3 metros de separación",
+        "Incluye varillas y banderas de diferentes tamaños",
+        "Interface: Universal para interfaces de laboratorio",
+        "Aplicaciones: Medición de velocidad, aceleración, gravedad"
+      ]
     },
     "lf-sensor-voltaje":{
-      "title":"L.F. Sensor de voltaje",
-      "description":"Mide la diferencia de potencial eléctrico entre dos puntos. Se utiliza para analizar circuitos, estudiar leyes de Ohm y verificar relaciones entre corriente y voltaje.",
+      "title":"Sensor de Diferencia de Potencial (Voltaje)",
+      "description":"Sensor diseñado para medir de forma segura y precisa la diferencia de potencial eléctrico (voltaje) entre dos puntos en un circuito. Ofrece múltiples rangos de medición para capturar desde señuras muy pequeñas (mV) en sensores hasta el voltaje de suministro de circuitos. Es la herramienta principal para verificar la Ley de Ohm, caracterizar componentes, medir fem de pilas, estudiar circuitos RC y RL, y para la adquisición de datos en experimentos de electricidad y electromagnetismo. Incluye cables con conectores de seguridad.",
       "model":"/models/sensor de voltaje.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Rango: ±30 V (seleccionable: ±1V, ±5V, ±30V)",
+        "Precisión: ±0.01 V",
+        "Resolución: 1 mV (en rango de 1V)",
+        "Impedancia de entrada: Alta (1 MΩ)",
+        "Aislamiento eléctrico para protección",
+        "Conectores: Seguros, tipo banana o cocodrilo",
+        "Muestreo: Hasta 1000 muestras/segundo"
+      ]
     },
     "lf-sensor-campo-magnetico":{
-      "title":"L.F. Sensor de campo magnetico",
-      "description":"Sensor de campo magnetico",
+      "title":"Sensor de Campo Magnético para Logger Pro",
+      "description":"Versión específica del sensor de campo magnético optimizada para su uso con el software Logger Pro de Vernier (u otras interfaces similares). Mide la componente axial o radial de campos magnéticos, permitiendo estudiar imanes permanentes, campos generados por corrientes en bobinas y solenoides, y el campo magnético terrestre. Su cabezal pequeño permite mapear campos con alta resolución espacial. La conexión directa a la interface simplifica la configuración experimental.",
       "model":"/models/Sensor de campo magnetico.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Rango: ±1000 mT (±10,000 Gauss)",
+        "Resolución: 0.1 mT",
+        "Tipo: Sonda de Efecto Hall",
+        "Cabezal giratorio para medir dirección (axial/radial)",
+        "Conector: Vernier BTB, PASCO, o USB directo",
+        "Incluye software para calibración y análisis"
+      ]
     },
     "lf-escala-64b":{
-      "title":"L.F. Escala 64B",
-      "description":"Accesorio que permite medir desplazamientos o posiciones con precisión. Se usa junto a sensores en estudios de movimiento lineal y calibración en experimentos de física.",
+      "title":"Escala Metálica Calibrada 64B",
+      "description":"Regla de metal de alta precisión, rígida y calibrda, diseñada específicamente como accesorio para experimentos de cinemática y dinámica. Se utiliza junto con sensores de movimiento o fotopuertas para proporcionar una referencia espacial precisa. Su diseño often incluye marcas every centimeter o milimeter, y sometimes ranuras o perforaciones que interactúan con los sensores ópticos para trigger mediciones de tiempo y posición de manera extremadamente precisa en rieles de aire o sistemas de deslizamiento.",
       "model":"/models/escala 64B.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Longitud: 64 cm o 1 m (varía por modelo)",
+        "Material: Aluminio anodizado o acero",
+        "Precisión de marcaje: 0.5 mm",
+        "Marcas: Métricas (cm, mm) y/o pulgadas",
+        "Incluye soportes para fijación en rieles",
+        "Aplicaciones: Mediciones de posición, calibración de sensores"
+      ]
     },
     "lf-escala-me":{
-      "title":"L.F. Escala ME",
-      "description":"Dispositivo de medición que sirve para registrar posiciones exactas en actividades con sensores. Es útil para estudiar trayectorias y calibrar desplazamientos en línea recta.",
+      "title":"Escala para Mediciones de Energía",
+      "description":"Dispositivo de medición lineal especializado, often used with energy sensors or motion sensors to measure height, position, or displacement in experiments involving potential energy, kinetic energy, and conservation of energy. Its design is optimized for easy integration with dynamics carts, pendulums, and other lab equipment. It provides a reliable spatial reference for calculating changes in gravitational potential energy (m*g*h) with high accuracy.",
       "model":"/models/L.F. Escala ME.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Longitud: 1-2 meters",
+        "Precisión: 0.5 mm",
+        "Material: Metal or composite with low thermal expansion",
+        "Mounting: Designed for specific lab stands or tracks",
+        "Scale: Dual (cm and inches) or metric only",
+        "Applications: Energy conservation, projectile motion, pendulum studies"
+      ]
     },
     "lf-sensor-temperatura":{
-      "title":"L.F. Sensor de temperatura",
-      "description":"Mide cambios de temperatura con precisión en distintas sustancias o ambientes. Se utiliza en calorimetría, estados térmicos y estudios de transferencia de calor.",
+      "title":"Sensor de Temperatura de Alta Precisión",
+      "description":"Transductor diseñado para medir variaciones de temperatura con una exactitud y resolución muy superiores a los termómetros comunes. Utiliza technology como termopares (Tipo J, K), RTDs (Detectores de Temperatura por Resistencia) o termistores, offering diferentes rangos y precisiones. Su rapidez de respuesta y capacidad de registro continuo lo hacen ideal para experimentos de calorimetría, estudios de cambios de fase (fusión, ebullición), reacciones químicas endotérmicas/exotérmicas, y monitoreo ambiental.",
       "model":"/models/sensor de temperatura.glb",
-      "video":"https://www.youtube.com/watch?v=cnvzYTF48Tg"
+      "video":"https://www.youtube.com/watch?v=cnvzYTF48Tg",
+      "specs": [
+        "Tipo: Termopar (K) o RTD de platino",
+        "Rango: -200 °C a 1200 °C (dependiendo del tipo)",
+        "Precisión: ±0.5 °C o mejor",
+        "Resolución: 0.01 °C",
+        "Tiempo de respuesta: < 2 segundos (en aire)",
+        "Sonda: Acero inoxidable, varilla o punta fina",
+        "Interface: USB o para interface de laboratorio"
+      ]
     },
     "amplificador-potencia1":{
-      "title":"Amplificador de potencia1",
-      "description":"Dispositivo que incrementa señales eléctricas para alimentar sensores o motores. Útil en prácticas que requieren medir, regular o amplificar potencia en circuitos de laboratorio.",
+      "title":"Amplificador de Potencia de Audio/Señal 1",
+      "description":"Dispositivo electrónico que incrementa la amplitud (potencia) de una señal eléctrica de entrada débil (proveniente de un generador de funciones o una interface) para deliver una señal de salida capaz de accionar cargas como altavoces, motores pequeños, bobinas o transductores. Es esencial en experimentos de ondas estacionarias en cuerdas, resonancia, accionamiento de sistemas mecánicos vibrantes, y para demostraciones de audio. Ofrece controles de ganancia y protecciones contra sobrecarga.",
       "model":"/models/amplificador de potencia_1.glb",
-      "video":"https://www.youtube.com/watch?v=oKmXaLlvr6c"
+      "video":"https://www.youtube.com/watch?v=oKmXaLlvr6c",
+      "specs": [
+        "Potencia de salida: 10–15 W RMS",
+        "Rango de frecuencia: 20 Hz - 20 kHz (±1 dB)",
+        "Impedancia de salida: 4-8 Ω",
+        "Ganancia ajustable",
+        "Entradas: Terminales banana o BNC",
+        "Protección: Thermal y contra cortocircuito",
+        "Alimentación: 110/220 V AC"
+      ]
     },
     "amplificador-potencia2":{
-      "title":"Amplificador de potencia2",
-      "description":"Equipo que amplifica potencia eléctrica para distintos ensayos. Permite observar el comportamiento de dispositivos ante señales intensificadas en estudios de energía y electrónica.",
+      "title":"Amplificador de Potencia para Motores DC",
+      "description":"Amplificador diseñado específicamente para proporcionar la potencia necesaria para controlar motores de corriente continua (DC) en aplicaciones de laboratorio. Permite variar la velocidad y dirección del motor mediante una señal de control de voltaje proveniente de una interface o generador. Es usado en experimentos de dinámica rotacional, eficiencia de máquinas, y en sistemas de control básico. Suele incluir protecciones para evitar daños por sobrecorriente en el motor o el amplificador itself.",
       "model":"/models/amplificador de potencia_2.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Potencia de salida: 10–15 W",
+        "Voltaje de salida: 0-12 V DC ajustable",
+        "Corriente máxima: 2 A",
+        "Control por voltaje: 0-5 V input",
+        "Incluye puente H para control de dirección (CW/CCW)",
+        "Conectores de seguridad para motor",
+        "Alimentación: Fuente externa 12-24 V DC"
+      ]
     },
     "amplificador-potencia3":{
-      "title":"Amplificador de potencia3",
-      "description":"Herramienta usada para aumentar la potencia de señales. Es clave en prácticas donde se analizan efectos eléctricos de alta potencia sobre cargas o instrumentos conectados.",
+      "title":"Amplificador de Potencia de Alta Fidelidad",
+      "description":"Amplificador de mayor potencia y fidelidad diseñado para aplicaciones que requieren una respuesta plana en frecuencia y baja distorsión, such as driving shakers for vibration experiments, large speakers for wave demonstrations, or other demanding loads. It provides clean power reproduction essential for accurate experimental results in acoustics and mechanical vibrations.",
       "model":"/models/amplificador de potencia_3.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Potencia de salida: 20-30 W RMS",
+        "Rango de frecuencia: 10 Hz - 50 kHz (±0.5 dB)",
+        "THD (Distorsión Armónica Total): <0.05%",
+        "Impedancia de salida: 4-16 Ω",
+        "Múltiples entradas: Line-level, XLR",
+        "Protecciones: DC offset, sobrecalentamiento, sobrecarga"
+      ]
     },
     "minilaboratorio-solar-metal":{
-      "title":"Minilaboratorio Solar de metal",
-      "description":"Equipo compacto que simula el aprovechamiento de energía solar. Permite realizar experimentos sobre captación, conversión y uso de energía solar en distintas aplicaciones prácticas.",
+      "title":"Kit Didáctico de Energía Solar",
+      "description":"Conjunto completo y compacto de componentes montado sobre una base metálica que permite realizar una wide variety de experimentos prácticos sobre energía solar fotovoltaica. Incluye un panel solar, motor DC, ventilador, LED, resistencias variables, y condensadores, allowing students to study the conversion of solar energy into electrical energy and then into mechanical motion, light, or stored energy. Ideal para entender los principios de las energías renovables, la caracterización de células solares, y los circuitos básicos.",
       "model":"/models/MINILABORATORIO SOLAR.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Panel solar: 6V, 100-200 mA",
+        "Motor DC de baja inercia",
+        "Ventilador y LED incluidos",
+        "Resistencias variables y interruptores",
+        "Condensador para almacenamiento de energía",
+        "Multímetro analógico básico incluido",
+        "Manual de experimentos: Eficiencia, curvas I-V, etc."
+      ]
     },
      "equipo-electricidad":{
-      "title":"Equipo de electricidad ",
-      "description":"Equipo para medir voltaje, amperios de sistemas electricos",
+      "title":"Equipo de Medición Eléctrica Multifunción",
+      "description":"Conjunto de instrumentos portátiles diseñados para medir múltiples parámetros eléctricos en circuitos y sistemas. Típicamente incluye multímetros digitales que pueden medir voltaje AC/DC, corriente AC/DC, resistencia, continuidad, y sometimes capacitancia y frecuencia. Es el equipo básico de diagnóstico y verificación para cualquier laboratorio de electrónica, electricidad, talleres de mantenimiento, y para educación tecnológica. La marca MCP es conocida por su robustez y relación calidad-precio.",
       "model":"/models/multimetros digitales marca MCP.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Multímetro Digital (DMM):",
+        "Voltaje DC: 0-600 V, precisión ±0.5%",
+        "Voltaje AC: 0-600 V, precisión ±1.0%",
+        "Corriente DC: 0-10 A, precisión ±1.0%",
+        "Corriente AC: 0-10 A, precisión ±1.5%",
+        "Resistencia: 0-20 MΩ, precisión ±0.8%",
+        "Pantalla LCD 3.5 dígitos",
+        "Protección contra sobrecarga"
+      ]
     },
      "dinamometro":{
-      "title":"Dinamometro de 300KG",
-      "description":"Instrumento que mide fuerzas aplicadas hasta 300 kg. Se usa para determinar el peso o fuerza de tracción en objetos, útil en estudios de mecánica y dinámica en el laboratorio.",
+      "title":"Dinamómetro Mecánico de 300 kgf",
+      "description":"Instrumento de medición de fuerza de tipo mecánico, basado en la ley de Hooke, que utiliza un resorte calibrado dentro de un cilindro con escala. La fuerza aplicada estira o comprime el resorte, y un indicador señala el valor en la escala. Diseñado para medir grandes fuerzas de tracción o compresión (hasta 300 kgf), es comúnmente usado en industria para verificar la fuerza de cables, cadenas, y aparejos, y en educación para demostraciones de fuerzas y estática. Muy robusto y no requiere energía eléctrica.",
       "model":"/models/DINAMOMETRO DE 300.glb",
-      "video":"https://www.youtube.com/watch?v=oHbGIZcWyvk"
+      "video":"https://www.youtube.com/watch?v=oHbGIZcWyvk",
+      "specs": [
+        "Rango: 0–300 kgf (0-3000 Newtons)",
+        "Precisión: ±0.5% del fondo de escala (±1.5 kgf)",
+        "Escala: Dual (kgf y N)",
+        "Resolución: 2 kgf",
+        "Tipo: Mecánico de resorte",
+        "Conexiones: Ganchos de acero forjado en ambos extremos",
+        "Carcasa: Acero o aluminio resistente a impactos"
+      ]
     },
      "basic-electrometer":{
-      "title":"Basic Electrometer",
-      "description":"Equipo o dispotivo para medir la carga electrica y la diferencia de potencial",
+      "title":"Electrómetro Básico para Electrostática",
+      "description":"Instrumento sensitivo diseñado para detectar y medir pequeñas cargas eléctricas estáticas y potenciales eléctricos. A diferencia de un voltímetro convencional, tiene una impedancia de entrada extremadamente alta para evitar que la carga medida se disipe a través del instrumento. Suele tener una aguja que se deflecta sobre una escala o una pantalla digital. Es la herramienta clave para experimentos cualitativos y cuantitativos de electrostática, como identificar tipos de carga, inducción, y la capacidad de los materiales para mantener una carga.",
       "model":"/models/Basic electrometer.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Rango de voltaje: 0 - ±5 kV (dependiendo del modelo)",
+        "Impedancia de entrada: > 10^12 Ω",
+        "Display: Aguja analógica o digital LCD",
+        "Precisión: ±5% del fondo de escala",
+        "Electrodo de entrada: Esfera metálica o pinza",
+        "Alimentación: Batería 9V (modelos digitales)",
+        "Aplicaciones: Detección de carga, experimentos de inducción"
+      ]
     },
      "tacometro-laser":{
-      "title":"Tacometro Laser",
-      "description":"Dispositivo portátil que mide la velocidad de rotación del eje de motores usando tecnología láser. Ideal para análisis de máquinas y estudio de dinámica rotacional en laboratorio.",
+      "title":"Tacómetro Láser Digital Portátil",
+      "description":"Instrumento de medición óptico que determina la velocidad de rotación (en Revoluciones Por Minuto - RPM) de un objeto sin contacto físico. Funciona dirigiendo un haz láser seguro hacia una pieza rotativa en la que se ha colocado una pequeña pieza de cinta reflectante. El instrumento detecta el reflejo de cada revolución y calcula la RPM. Es ideal para medir la velocidad de motores, ventiladores, ejes, y cualquier parte rotativa en laboratorios de mecánica, mantenimiento industrial y talleres.",
       "model":"/models/Tacometro Laser.glb",
-      "video":"https://www.youtube.com/watch?v=i61s7CqYPcM"
+      "video":"https://www.youtube.com/watch?v=i61s7CqYPcM",
+      "specs": [
+        "Rango: 2–100,000 rpm",
+        "Precisión: ±0.01% de la lectura",
+        "Resolución: 0.1 rpm (en bajas velocidades)",
+        "Distancia de medición: Hasta 50 cm",
+        "Puntero láser: Clase II, 635 nm",
+        "Memoria para almacenar valores máx/mín/promedio",
+        "Pantalla LCD con retroiluminación",
+        "Alimentación: Baterías de 9V"
+      ]
     },
      "lanzadores-esfereas":{
-      "title":"Lanzadores de Esferas PASCO ME6625",
-      "description":"Dispositivo para lanzar esferas metalicas en Movimiento parabolico ",
+      "title":"Lanzador de Proyectiles PASCO ME-6625",
+      "description":"Dispositivo robusto y ajustable diseñado para lanzar esferas metálicas de acero con una velocidad inicial reproducible y en un ángulo preciso. Utiliza un mecanismo de resorte tensado y un disparador de liberación suave para impartir energía cinética al proyectil. Es la herramienta perfecta para estudiar experimentalmente el movimiento en dos dimensiones (parabólico), verificar las ecuaciones de cinemática, determinar la velocidad inicial, y medir el alcance máximo en función del ángulo de tiro. Incluye accesorios para fijación a mesas.",
       "model":"/models/lanzador de esferas PASCO.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Velocidades ajustables: Baja, media, alta (3-8 m/s)",
+        "Ángulo de lanzamiento: 0-90° con transportador integrado",
+        "Proyectiles: Esferas de acero de 15-25 mm de diámetro",
+        "Mecanismo: Resorte de acero con disparador seguro",
+        "Base estable con abrazaderas para sujeción",
+        "Incluye papel carbón para marcar puntos de impacto",
+        "Aplicaciones: Movimiento parabólico, conservación de energía"
+      ]
     },
      "banco-dinamica":{
-      "title":"Banco de Dinamica ",
-      "description":"",
+      "title":"Banco de Dinámica con Carril de Aire",
+      "description":"Sistema modular completo para estudiar conceptos de cinemática y dinámica con fricción negligible. Consiste en un carril largo y recto con múltiples orificios por los que sale aire a presión, creando un colchón de aire sobre el cual se deslizan deslizadores especiales. Incluye fotopuertas, sensores de posición, poleas, masas, y portamasas. Permite experimentos precisos sobre las leyes de Newton, conservación del momento lineal, conservación de la energía, y colisiones elásticas e inelásticas.",
       "model":"/models/banco-dinamica.glb",
-      "video":"https://www.youtube.com/watch?v=v5oUiTAaeH0"
+      "video":"https://www.youtube.com/watch?v=v5oUiTAaeH0",
+      "specs": [
+        "Carril de aire: 1.5 - 2 m de longitud, perfil de aluminio",
+        "Compresor de aire integrado o externo",
+        "Deslizadores con ajuste de masa",
+        "Sensores: 2 fotopuertas con interface",
+        "Accesorios: Polea sin fricción, juego de masas, resortes",
+        "Software para captura y análisis de datos"
+      ]
     },
      "balanza-precision-marca":{
-      "title":"Balanza de precision Marca AND",
-      "description":"Balanza de plastico color blanco, equipo para medir la masa",
+      "title":"Balanza de Precisión Analítica AND",
+      "description":"Balanza digital de la marca AND, reconocida por su alta precisión y confiabilidad, diseñada para mediciones de masa exactas en laboratorios de química, farmacia, investigación y control de calidad. Cuenta con una cámara de pesaje protegida de corrientes de aire para maximizar la estabilidad de la lectura. Su tecnología de células de carga monocristalinas ofrece una repetibilidad excepcional. Funciones como el conteo de piezas, porcentaje de pesaje y calibración interna automática la hacen versátil para diversas aplicaciones.",
       "model":"/models/Balanza de precision marca AND.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Capacidad máxima: 5000g",
+        "Precisión (legibilidad): 0.1g",
+        "Plato de pesaje: Acero inoxidable, ∅ 120 mm",
+        "Cámara de pesaje con puertas transparentes",
+        "Calibración: Automática interna (o manual con peso)",
+        "Funciones: Tara, conteo de piezas, porcentaje",
+        "Interface de comunicación: RS-232 opcional",
+        "Cumple con normas GLP"
+      ]
     },
      "reloj-cronometro-blanco":{
-      "title":"Reloj cronometro Blanco",
-      "description":"Dispositivo manual para medir intervalos de tiempo con precisión. Usado en prácticas experimentales para registrar duraciones y analizar fenómenos temporales en laboratorio de física.",
+      "title":"Cronómetro Digital de Mesa Blanco",
+      "description":"Temporizador/cronómetro digital de sobremesa con carátula blanca, diseñado para medir intervalos de tiempo con alta precisión. Cuenta con una pantalla LCD grande para una lectura clara desde distancia, making it ideal para prácticas de laboratorio de física (péndulos, movimientos en planos inclinados), deportes, y actividades educativas grupales. Sus funciones typically incluyen inicio/parada, vuelta a cero, y modo de lapso. Funciona con baterías y often tiene un diseño robusto para uso en entornos de laboratorio.",
       "model": "/models/Reloj cronometro blanco.glb",
-      "video":"https://www.youtube.com/watch?v=fMsUtRLUf3Y"
+      "video":"https://www.youtube.com/watch?v=fMsUtRLUf3Y",
+      "specs": [
+        "Precisión: ±0.01 s",
+        "Rango de medición: 0-9:59’59.99’’",
+        "Pantalla LCD de 8 dígitos",
+        "Funciones: Cronómetro, temporizador, hora actual",
+        "Memoria de vueltas parciales (lap)",
+        "Alimentación: Batería de 1.5 V (AA)",
+        "Carcasa: Plástico blanco resistente"
+      ]
     },
      "interfaz-sensores":{
-      "title":"Interfaz para sensores ",
-      "description":"Equipo para conectar sensores de vernier con PC",
+      "title":"Interfaz Universal para Sensores Vernier",
+      "description":"Dispositivo compacto que permite conectar una amplia gama de sensores Vernier (de temperatura, pH, fuerza, luz, etc.) a un puerto USB de una computadora. Convierte las señales análogas de los sensores en datos digitales que son leídos y graficados por el software Logger Pro o Logger Lite. Simplifica enormemente la configuración de experimentos científicos digitales, allowing students to focus on the science rather than the wiring. Es plug-and-play y muy fácil de usar en laboratorios de colegios y universidades.",
       "model": "/models/Interfaz para sensores.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Tipo: Conversor análogo-digital (ADC)",
+        "Conexión: USB 2.0/3.0",
+        "Puertos: 3 entradas análogas para sensores Vernier",
+        "1 entrada digital para fotopuertas",
+        "Alimentación: Por USB",
+        "Software incluido: Logger Lite / Logger Pro",
+        "Compatibilidad: Windows, macOS, Chrome OS"
+      ]
     },
      "cronometro-tiempo-plastico":{
-      "title":"Cronometro de tiempo plastico blanco",
-      "description":"Cronómetro portátil fabricado en plástico blanco que permite medir tiempos con exactitud. Ideal para ejercicios que requieren control temporal en actividades físicas o experimentales.",
+      "title":"Cronómetro Deportivo de Mano Plástico",
+      "description":"Cronómetro portátil de mano, fabricado en plástico blanco resistente a impactos y salpicaduras, diseñado para uso intensivo en educación física, deportes, y timing general en laboratorios. Es simple de operar, con botones grandes para iniciar, parar y resetear. Su diseño ergonómico y clip para sujetar lo hacen fácil de transportar y usar. Aunque su precisión es ligeramente inferior a los cronómetros de mesa, es perfectamente adecuado para la mayoría de las aplicaciones educativas donde se requiere medir tiempos superiores a un segundo.",
       "model": "/models/Cronometro de tiempo plastico blanco.glb",
-      "video":""
+      "video":"",
+      "specs": [
+        "Precisión: ±0.01 s",
+        "Rango: 0-9:59’59.99’’",
+        "Pantalla LCD de 7-8 dígitos",
+        "Funciones: Cronómetro simple",
+        "Resistente al agua (splash proof)",
+        "Alimentación: Batería de 1.5 V (LR44 o similar)",
+        "Incluye clip para colgar o sujetar"
+      ]
     }
 }
