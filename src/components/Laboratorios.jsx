@@ -23,7 +23,6 @@ const laboratorios = [
     componentes: [
       "banco-dinamica",
       "interface-computadora-pasco"
-
     ],
     color: "from-green-500 to-green-700",
     icon: ""
