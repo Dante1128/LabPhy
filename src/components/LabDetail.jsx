@@ -67,6 +67,27 @@ const LabDetail = () => {
         <div className={styles.contentSide}>
           <p className={styles.description}>{item.description}</p>
 
+          {/* Especificaciones técnicas */}
+          {item.specs && (
+            <div className={styles.specsBox}>
+              <div className={styles.specsHeader}>
+                <div className={styles.specsIcon}>
+                  <i className="material-icons">engineering</i>
+                </div>
+                <h4 className={styles.specsTitle}>Especificaciones Técnicas</h4>
+              </div>
+              
+              <div className={styles.specsGrid}>
+                {item.specs.map((spec, idx) => (
+                  <div key={idx} className={styles.specCard}>
+                    <div className={styles.specBullet}></div>
+                    <span className={styles.specText}>{spec}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className={styles.videoLinkContainer}>
             <a 
               href={item.video} 
