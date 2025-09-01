@@ -29,7 +29,7 @@ const laboratorios = [
     icon: ""
   },
   {
-    name: "Laboratorio 3",
+    name: "Laboratorio 4",
     route: "/laboratorio/3", 
     description: "Óptica y Calorimetría",
     componentes: [
