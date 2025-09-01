@@ -17,13 +17,13 @@ const laboratorios = [
     icon: ""
   },
   {
-    name: "Laboratorio 2", 
+    name: "Movimiento rectilineo uniforme", 
     route: "/laboratorio/2",
-    description: "Termodinámica y Electricidad",
+    description: "Fisica I",
     componentes: [
-      "capacitor-placas-paralelas",
-      "dilatometro-reloj",
-      "termometro-digital"
+      "banco-dinamica",
+      "interface-computadora-pasco"
+
     ],
     color: "from-green-500 to-green-700",
     icon: ""
