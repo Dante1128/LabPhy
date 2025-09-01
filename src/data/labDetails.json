@@ -3,13 +3,27 @@
       "title": "Balanza Digital",
       "description": "Es un instrumento electrónico que permite medir el peso de objetos de forma precisa y rápida. Utiliza sensores que convierten la presión en datos digitales, los cuales se muestran en una pantalla. Es común en comercios, laboratorios e industrias.",
       "model": "/models/balanza_digital.glb",
-      "video": "https://www.youtube.com/watch?v=R2ZMwfWhb0U"
+      "video": "https://www.youtube.com/watch?v=R2ZMwfWhb0U",
+      "specs": [
+        "Capacidad máxima: 5000g",
+        "Precisión: 0.1g",
+        "Pantalla LCD retroiluminada",
+        "Alimentación: 2x pilas AA",
+        "Función tara y autoapagado"
+      ]
     },
     "fuente-de-energia": {
       "title": "Fuente de poder",
       "description": "Dispositivo que convierte la energía eléctrica de una fuente (como un tomacorriente) en el voltaje y corriente adecuados para alimentar aparatos electrónicos. Es esencial para el funcionamiento seguro y estable de muchos equipos.",
       "model": "/models/Fuente+de+Energia.glb",
-      "video": "https://www.youtube.com/watch?v=wNG_OIgNs18w"
+      "video": "https://www.youtube.com/watch?v=wNG_OIgNs18w",
+      "specs": [
+        "Capacidad máxima: 5000g",
+        "Precisión: 0.1g",
+        "Pantalla LCD retroiluminada",
+        "Alimentación: 2x pilas AA",
+        "Función tara y autoapagado"
+      ]
     },
     "pendulo": {
       "title": "Péndulo",
@@ -39,7 +53,14 @@
       "title":"Sensor de Campo magnetico",
       "description":"Mide la intensidad y dirección de campos magnéticos. Permite estudiar fenómenos como la inducción y el comportamiento de imanes, bobinas y corrientes eléctricas.",
       "model":"/models/Sensor de campo magnetico.glb",
-      "video":"https://www.youtube.com/watch?v=mhkzvYjzZS8"
+      "video":"https://www.youtube.com/watch?v=mhkzvYjzZS8",
+      "specs": [
+        "Capacidad máxima: 5000g",
+        "Precisión: 0.1g",
+        "Pantalla LCD retroiluminada",
+        "Alimentación: 2x pilas AA",
+        "Función tara y autoapagado"
+      ]
     },
     "interface-computadora-pasco":{
       "title":"Interface de computadora PASCO",
