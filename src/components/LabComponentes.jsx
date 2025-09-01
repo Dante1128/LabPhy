@@ -6,30 +6,30 @@ import "./Labitems.css";
 
 const laboratorios = [
   {
-    name: "Laboratorio 1",
+    name: "Colesión inelastica",
     route: "/laboratorio/1",
     componentes: [
-      "balanza-digital",
-      "sensor-campo-magnetico",
+      "banco-dinamica",
+      "lf-sensor-fotopuerta", 
       "interface-computadora-pasco"
     ]
   },
   {
-    name: "Laboratorio 2",
+    name: "Movimiento rectilineo uniforme",
     route: "/laboratorio/2",
     componentes: [
-      "capacitor-placas-paralelas",
-      "dilatometro-reloj",
-      "termometro-digital"
+      "banco-dinamica",
+      "interface-computadora-pasco"
     ]
-  },
+    },
   {
-    name: "Laboratorio 3",
+    name: "Colesión lastica",
     route: "/laboratorio/3",
     componentes: [
-      "distanciometro-laser",
-      "calorimetro-mezcla",
-      "lf-sensor-luz"
+       "banco-dinamica",
+      "lf-sensor-fotopuerta", 
+      "interface-computadora-pasco",
+      "distanciometro-laser"
     ]
   }
 ];
