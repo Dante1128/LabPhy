@@ -29,9 +29,9 @@ const laboratorios = [
     icon: ""
   },
   {
-    name: "Laboratorio 4",
+    name: "Colesión lastica",
     route: "/laboratorio/3", 
-    description: "Óptica y Calorimetría",
+    description: "Física I",
     componentes: [
       "distanciometro-laser",
       "calorimetro-mezcla",
