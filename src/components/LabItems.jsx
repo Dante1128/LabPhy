@@ -60,6 +60,9 @@ const LabItems = () => {
           <img src="/image/logo.png" alt="Logo LabPhy" />
         </div>
         <div className="spacer"></div> {/* Para centrar el logo */}
+        <Link to="/laboratorios" className="boton-laboratorios">
+          Laboratorios
+        </Link>
       </div>
       
       <div className="barrabuscador">
